@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/home.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100%;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 100px;
+}
+
+html {
+    height: 100%;
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #adadad;
+}
+
+li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    list-style: none;
+}
+
+
+/* NAVIGATION */
+
+.Nav {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background: #323232;
+}
+
+.Nav_Link {
+    color: #ffffff;
+    word-spacing: 200px;
+    padding: 40px;
+}
+
+.Btn_Logout {
+    background: none;
+    border: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    padding: 40px;
+    font-weight: 100;
+    outline: inherit;
+}
+
+.Btn_Logout:hover {
+    color: #adadad;
+}
+
+
+/* HOME */
+
+.Home_Headline {
+    font-size: 200px;
+    color: #ffffff;
+    text-align: center;
+    padding: 120px;
+    margin-bottom: 80px;
+}
+
+
+/* MENU */
+
+.Menu_Body {
+    background-image: url("../img/menu.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.Menu_Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff;
+    padding-bottom: 100px;
+    margin-top: 60px;
+}
+
+.Menu_Container-Lunch {
+    padding: 50px;
+}
+
+.Menu_Container-Dinner {
+    padding: 50px;
+}
+
+.Menu_Container-Drinks {
+    padding: 50px;
+}
+
+.Menu_Headline {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Menu_Paragraph {
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+
+/* RESERVATIONS */
+
+.Reservations_Body {
+    background-image: url("../img/reservations.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.Reservations_Link {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.Reservations_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.Reservations_Content {
+    background: rgba(211, 211, 211, 0.445);
+    padding: 30px;
+    margin: 20px;
+}
+
+.Reservations_Headline {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.Reservations_Paragraph {
+    color: #ffffff;
+}
+
+.Reservations_Paragraph-notApproved {
+    color: #ff0000;
+}
+
+.Reservation-Btn_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.Reservation-Btn {
+    color: #ffffff;
+    font-size: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.Reservation-Btn:hover {
+    color: #adadad;
+}
+
+
+/* CREATE */
+
+.Create_Container {
+    background: rgba(211, 211, 211, 0.445);
+    padding: 40px;
+}
+
+.Create_Form-Btn_Container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Create_Form-Input {
+    margin: 10px;
+}
+
+.Create_Form-Select,
+.Create_Form-Select-Time {
+    margin-left: 10px;
+    width: 90%;
+    height: 23px;
+}
+
+.Create_Form-Select-Time {
+    margin-top: 10px;
+}
+
+.Input_Date {
+    width: 97%;
+}
+
+.Input_Amount {
+    width: 95%;
+    height: 18px;
+}
+
+.Create_Form-Btn {
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    outline: inherit;
+}
+
+.Create_Form-Btn:hover {
+    color: #adadad;
+}
+
+.Create_Error {
+    color: #ff0000;
+    text-align: center;
+}
+
+
+/* REVIEW */
+
+.Review_Body {
+    background-image: url("../img/reservations.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.Review_Link-Container {
+    display: flex;
+    justify-content: center;
+}
+
+.Review_Link {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.Review_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.Review_Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(211, 211, 211, 0.445);
+    padding: 30px;
+    margin: 20px;
+    width: 40%;
+    min-height: 200px;
+}
+
+.Review_Headline {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.Review_Paragraph {
+    color: #ffffff;
+    padding: 10px;
+}
+
+.Review_Paragraph-Author {
+    color: #ffffff;
+}
+
+.Author_Content {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.Review_Button {
+    margin-top: 100px;
+}
+
+
+/* ADMIN */
+
+.Admin_Headline, .Admin_Paragraph, .Admin_Paragraph-NotApproved {
+    text-align: center;
+    margin: 20px; 
+    color: #ffffff; 
+}
+
+.Admin_Paragraph, .Admin_Paragraph-NotApproved {
+    font-size: 15px; 
+}
+
+.Admin_Paragraph-NotApproved {
+    color: #ff0000; 
+}
+
+.Admin_Reservation-Link {
+    text-align: center;
+}
+
+.Admin_Container {
+    background: rgba(0, 0, 0, 0.678);
+    margin: 40px; 
+    padding: 20px; 
+    margin-bottom: 120px; 
+}
+
+
+/* LOGIN */
+
+.Login {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.Login_Container {
+    padding: 10px;
+}
+
+
+/* LOGIN */
+
+.Login_Body {
+    background-image: url("../img/BACKGROUND_LoginSignUp.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.Login {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    margin-bottom: 70px;
+}
+
+.Login_Container {
+    background: rgba(0, 0, 0, 0.678);
+    padding: 40px;
+}
+
+.Login_Form-Email,
+.Login_Form-Password,
+.Login_Form-Btn_Container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.Login_Form-Btn_Container {
+    margin-top: 30px;
+}
+
+.Login_Form-Btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 100;
+    outline: inherit;
+}
+
+.Login_Form-Btn:hover {
+    color: #adadad;
+}
+
+.Login_Form-Btn-Link-SignUp {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.Login_Form-Remember-label,
+.Login_Form-Btn-Link {
+    color: #ffffff;
+}
+
+.Login_Form-Btn-Link {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.Login_Form-Btn-Link:hover {
+    color: #adadad;
+}
+
+
+/* FOOTER */
+
+.Footer {
+    background: #323232;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #ffffff;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.Footer_Contact {
+    padding: 30px;
+    margin-right: 220px;
+}
+
+.Footer_Contact-Headline {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.Footer_Contact-Paragraph {
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+.Footer_Copy {
+    padding: 30px;
+}
+
+.Footer_Copy-Headline {
+    font-size: 70px;
+}
+
+.Footer_Copy-Paragraph {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.Footer_Follow {
+    padding: 30px;
+    margin-left: 220px;
+}
